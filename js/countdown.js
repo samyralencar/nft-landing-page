@@ -12,10 +12,11 @@ const countdownfunction = setInterval(function () {
   const seconds = Math.floor(diff % (1000 * 60) / 1000);
 
   if (diff < 0) {
-    clockdiv.style.display = "none";
+    
     clearInterval(countdownfunction);
   } else {
-    clockdiv.querySelector(".days").innerHTML = days;
+    clockdiv.style.display = "none";
+    clockdiv.querySelector(".days").innerHTML = 11;//days;
     clockdiv.querySelector(".hours").innerHTML = hours;
     clockdiv.querySelector(".minutes").innerHTML = minutes;
     clockdiv.querySelector(".seconds").innerHTML = seconds;
