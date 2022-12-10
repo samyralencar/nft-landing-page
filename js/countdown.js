@@ -15,8 +15,8 @@ const countdownfunction = setInterval(function () {
     
     clearInterval(countdownfunction);
   } else {
-    clockdiv.style.display = "none";
-    clockdiv.querySelector(".days").innerHTML = 11;//days;
+    //clockdiv.style.display = "none";
+    clockdiv.querySelector(".days").innerHTML = days;
     clockdiv.querySelector(".hours").innerHTML = hours;
     clockdiv.querySelector(".minutes").innerHTML = minutes;
     clockdiv.querySelector(".seconds").innerHTML = seconds;
