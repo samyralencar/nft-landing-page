@@ -1,10 +1,10 @@
 //Countdown Timer
-const clockdiv = document.getElementById("data-dat").value;
+const clockdiv = document.getElementById("data-dat");
 const countDownTime = new Date(clockdiv).getTime();
 
 const countdownfunction = setInterval(function () {
   const now = new Date().getTime();
-  //alert("aaaaaaa "+countDownTime);
+  alert("aaaaaaa "+countDownTime);
   const diff = countDownTime - now;
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
@@ -17,7 +17,7 @@ const countdownfunction = setInterval(function () {
     
     clearInterval(countdownfunction);
   } else {
-    alert("entao aqui");
+   // alert("entao aqui"+diff);
     clockdiv.style.display = "none";
     clockdiv.querySelector(".days").innerHTML = days;
     clockdiv.querySelector(".hours").innerHTML = hours;
