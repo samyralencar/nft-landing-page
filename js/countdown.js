@@ -4,7 +4,7 @@ const countDownTime = new Date(clockdiv).getTime();
 
 const countdownfunction = setInterval(function () {
   const now = new Date().getTime();
-  alert("aaaaaaa "+countDownTime);
+  //alert("aaaaaaa "+countDownTime);
   const diff = countDownTime - now;
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
