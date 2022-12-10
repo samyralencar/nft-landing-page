@@ -12,7 +12,7 @@ const countdownfunction = setInterval(function () {
   const minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
   const seconds = Math.floor(diff % (1000 * 60) / 1000);
 
-  if (diff > 0) {
+  if (diff < 0) {
     clockdiv.style.display = "none";
     clearInterval(countdownfunction);
   } else {
