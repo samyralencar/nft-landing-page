@@ -1,6 +1,6 @@
 //Countdown Timer
 const clockdiv = document.getElementById("countdown");
-const countDownTime = new Date(clockdiv.getAttribute.getTime());
+const countDownTime = new Date(clockdiv.getAttribute("data-date").getTime());
 
 const countdownfunction = setInterval(function () {
   const now = new Date().getTime();
@@ -17,7 +17,7 @@ const countdownfunction = setInterval(function () {
     
     clearInterval(countdownfunction);
   } else {
-   // alert("entao aqui"+diff);
+    alert("entao aqui"+diff);
     clockdiv.style.display = "none";
     clockdiv.querySelector(".days").innerHTML = days;
     clockdiv.querySelector(".hours").innerHTML = hours;
